@@ -36,5 +36,4 @@ def patients():
     data = cursor.fetchall()
     return str(data)
 
-app.run(host="0.0.0.0", port=
-::contentReference[oaicite:0]{index=0}
+app.run(host="0.0.0.0", port=5000)

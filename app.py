@@ -34,6 +34,7 @@ def add_patient():
 def patients():
     cursor.execute("SELECT * FROM patients")
     data = cursor.fetchall()
-    return str(data)
+    return render_template("patients.html", patients=data)
 
 app.run(host="0.0.0.0", port=5000)
+
